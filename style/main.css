@@ -1,0 +1,97 @@
+:root{
+    --vermelho:#E50914;
+    --preto:#0a0a0a;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--preto);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.container{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-left: 1em;
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 50px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: rgb(255, 255, 255);
+}
+
+/*Filme principal*/
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, 0.149), rgba(0, 0, 0, 0.588)100%), url('sherk.jpg');
+    height: 720px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.descricao{
+    margin-top: 30px;
+    margin-bottom: 70px;
+    margin-left: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px
+}
+.titulo{
+    margin-top: 30%;
+    font-size: 50px;
+    margin-left: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.botoes{
+    margin-left: 20px;
+}
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: rgb(255, 254, 254);
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+.botao i{
+    margin-right: 20px;
+}
+.house{
+    margin-left: 30px;
+    width: 60%;
+}
+
+.box-filme{
+    height: 10%;
+    width: 10%;
+    display: block;
+}
